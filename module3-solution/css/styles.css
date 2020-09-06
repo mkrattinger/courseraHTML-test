@@ -1,18 +1,13 @@
-/**{
-  margin: 0;
-  padding: 0; 
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
-*/
-.navbar-brand h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: bold;
-  color: black;
-  /*
-  font-family: 'Lora', serif;
-  font-size: 1.5em;
-  text-shadow: 1px 1px 1px #222;
-  line-height: .75;*/
+body {
+  font-size: 16px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oxygen', sans-serif;
+  */
 }
 
 /** HEADER **/
@@ -24,69 +19,111 @@
 
 .navbar-header div{
   height: 80px;
+  border: 0;
 /*  vertical-align: middle;*/
+}
+
+.navbar-brand h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: black;
+  line-height: 1;
+  /*
+  border-color: black;
+  border-width: 1px:;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 0px;
+  font-family: 'Lora', serif;
+  text-shadow: 1px 1px 1px #222;
+  line-height: .75;*/
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
 
 .navbar-brand h1 {
-/*  vertical-align: middle;*/
+ /*  text-align: right;
+ vertical-align: middle;*/
 }
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+
+}
+/*
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}*/
 
 h1 {
-  text-align: left;
   margin: 0;
 }
-
-h2{  
-  margin-bottom: 25px;
+.collapsable-nav{
+  padding: 0;
+  margin: 0;
+}
+#nav-list li {
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px;
+  border-color: black;
 }
 #nav-list a {
   color: #000000;
   background-color: white;
   border-color: #000000;
-  border: 1px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 1;
+  border-bottom: 1;
+  border-color: black;
+  border-style: solid;
+  /*overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;*/
 }
-/*
-#nav-list span {
+
+#collapsable-nav{
+  border: 0;
+  border-color: #bbbbbb;
+}/*
+.nav span{
+  border-color: black;
+  border-width: 1px;
+}
+
+#nav-list span a {
+  font-size: 25px;
   color: #000000;
   text-align: center;
   border-color: #000000;
   border: 1px;
-}
-
-#nav-
-#nav-list a {
-  color: #951C49;
-  text-align: center;
-}list {
-  margin-top: 10px;
-}
-#nav-list a {
-  color: #951C49;
-  text-align: center;
-}
-#nav-list a:hover {
-  background: #E7E7E7;
-}
-#nav-list a span {
-  font-size: 1.8em;
-}
-*/
-
+  
+}*/
 
 /* END HEADER */
 
+h2{  
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+.menu-tiles{
+  /*clear: left;*/
+  }
 /** menu item **/
 .menu-tile{
   background-color: #adadad;
   margin-bottom: 15px;
   padding: 15px;
+  clear: both;
+
   /*
   width: 100%; 
-  margin-right: auto;
-  margin-left: auto; 
   position: relative;
   border: 1px solid black;
   position: relative;
@@ -98,4 +135,6 @@ h2{
 
 .menu-tile p{
   font-weight: bold;
+  font-size: 1.4em;
+
 }
